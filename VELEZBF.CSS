@@ -1,0 +1,356 @@
+* 
+{ 
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 10px; 
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+   
+
+}
+
+.precion{
+    text-decoration: line-through;
+    flex: 1 1 auto;
+}
+
+.preciod{
+    color: #DE964C;
+    flex: 1 1 auto;
+}
+
+.comprar{
+    width: 100%;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #B7B4B4;
+    color: #000;
+    border: 0px;
+
+}
+
+.descripcion{
+    justify-content: center;
+    width: 100%;
+}
+
+H6{
+    text-align: center;
+    justify-content: center;
+}
+
+h5{
+    font-size: 16px;
+}
+
+.precios{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    
+
+}
+    .header{
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: #EDEAEA;
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0;
+            justify-content: space-between;
+            
+            
+            
+        }
+
+            li{
+                display: none;
+            }
+
+
+            .logo{
+                flex: 1 1 auto;
+                
+            }
+
+                .lvelez{
+                    width: 100px;
+                    height: auto;
+                }
+
+            .nav{
+                
+                flex: 5 1 auto;
+                justify-content: center;
+                font-size: 16px;
+                margin:auto;
+                text-align: center;
+                
+                  
+            }
+
+                .ancla{
+                    text-decoration: none;
+                    color: #634E42;
+                    
+                }
+
+                
+            .iconos{
+                color: #634E42;
+                flex: 1 1 auto;
+                
+            }
+
+    .banner{
+        background-image: URL("bannerfinal.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        
+
+    }
+        .cta{
+            width: 20%;
+            border-color: #fff;
+            border: 2px;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid;
+            text-align: center;
+            
+        }
+
+    .section{
+
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        
+        
+    } 
+    
+        .articulos{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 1 100%;
+            align-items: center;
+            
+           
+           
+            
+            
+            
+        } 
+
+            .promo{
+                
+                
+               
+                flex: 1 1 40%;
+                margin: 0px;
+                padding: 0px;
+                
+
+                
+                
+                
+            }
+
+            .imgpbajo{
+                
+                width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 0px;
+               
+            }
+
+             .imgpmedio{
+                
+                width: 100%;
+                height: auto;
+                padding: 0px;
+
+            } 
+               
+
+             .imgpalto{
+                width: 100%;
+                height: auto;
+
+            }
+
+            
+
+            .destacados{
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+
+            
+            .titulo{
+
+                background: #fff;
+                
+                
+                
+               
+                
+            }
+            
+            .tdestacado{
+                width: 30%;
+                height: auto;
+                border-color: #000;
+                border: 2px;
+                color: #000;
+                text-decoration: none;
+                border: 2px solid #000;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                font-size: 16px;
+                margin: auto;
+                
+                 }
+
+               
+
+                .productos{
+
+                
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                
+
+               
+                
+                
+                
+                
+                
+                }
+
+                    .producto{
+                        
+                        width: 20%;
+                        height: auto;
+                        
+                    }     
+                        
+    
+    .footer{
+        
+        display: flex;
+        flex-flow: column nowrap;
+        
+    }
+
+
+        .pie{
+
+            width: 100%;
+            height: auto;
+        }
+
+        .fotopie{
+            width: 100%;
+            height: auto;
+        }
+
+@media all and (max-width: 800px){
+
+.section {
+    flex-direction: column;
+}
+
+.articulos{
+    flex-flow: column nowrap;
+    
+    
+}
+
+.menu {
+    flex-direction: column;
+    height: auto;
+}
+
+}
+
+@media all and (max-width: 400px){
+    
+    .productos{
+        
+        flex-direction: column;
+    
+    }
+
+    section {
+        flex-direction: column;
+
+    }
+    
+    .articulos{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .promo{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0px;
+        
+
+    }
+
+    .banner{
+    margin-bottom: 0px;
+}
+
+.cta{
+
+    margin-top: -90px;
+    margin-bottom: 0px;
+
+}
+
+}
